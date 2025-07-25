@@ -1,0 +1,36 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_013720B0 .scope module, "not_gate_tb" "not_gate_tb" 2 3;
+ .timescale -9 -12;
+v0137EF08_0 .var "A", 0 0;
+v0137EF60_0 .net "Y", 0 0, L_013721C0; 1 drivers
+S_01372138 .scope module, "uut" "not_gate" 2 9, 3 1, S_013720B0;
+ .timescale 0 0;
+L_013721C0 .functor NOT 1, v0137EF08_0, C4<0>, C4<0>, C4<0>;
+v01375DA8_0 .net "A", 0 0, v0137EF08_0; 1 drivers
+v0137EEB0_0 .alias "Y", 0 0, v0137EF60_0;
+    .scope S_013720B0;
+T_0 ;
+    %vpi_call 2 17 "$dumpfile", "not_gate_tb.vcd";
+    %vpi_call 2 18 "$dumpvars", 1'sb0, S_013720B0;
+    %vpi_call 2 20 "$display", "Time | A | Y";
+    %vpi_call 2 21 "$display", "------------------";
+    %set/v v0137EF08_0, 0, 1;
+    %delay 5000, 0;
+    %vpi_call 2 25 "$display", "%t   | %b | %b", $time, v0137EF08_0, v0137EF60_0;
+    %set/v v0137EF08_0, 1, 1;
+    %delay 5000, 0;
+    %vpi_call 2 28 "$display", "%t   | %b | %b", $time, v0137EF08_0, v0137EF60_0;
+    %vpi_call 2 30 "$stop";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "not_gate_tb.v";
+    "not_gate.v";

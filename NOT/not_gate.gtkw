@@ -1,0 +1,22 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Fri Jul 25 21:48:11 2025
+[*]
+[dumpfile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\not_gate_tb.vcd"
+[dumpfile_mtime] "Fri Jul 25 21:46:51 2025"
+[dumpfile_size] 344
+[savefile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\not_gate.gtkw"
+[timestart] 4997
+[size] 1000 600
+[pos] -1 -1
+*0.000000 5000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+not_gate_tb.A
+@29
+not_gate_tb.Y
+[pattern_trace] 1
+[pattern_trace] 0
