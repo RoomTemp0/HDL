@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Mon Jul 28 15:04:56 2025
+[*]
+[dumpfile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\nor_gate_tb.vcd"
+[dumpfile_mtime] "Mon Jul 28 15:03:16 2025"
+[dumpfile_size] 435
+[savefile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\nor_gate.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-12.122165 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] nor_gate_tb.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+nor_gate_tb.uut.A
+nor_gate_tb.uut.B
+@29
+nor_gate_tb.uut.Y
+[pattern_trace] 1
+[pattern_trace] 0
