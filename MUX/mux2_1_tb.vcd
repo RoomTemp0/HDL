@@ -1,0 +1,100 @@
+$date
+	Mon Jul 28 14:04:40 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module mux2_1_tb $end
+$var wire 1 ! Y $end
+$var reg 1 " D0 $end
+$var reg 1 # D1 $end
+$var reg 1 $ Sel $end
+$scope module uut $end
+$var wire 1 % D0 $end
+$var wire 1 & D1 $end
+$var wire 1 ' Sel $end
+$var wire 1 ! Y $end
+$var wire 1 ( and_out_d0 $end
+$var wire 1 ) and_out_d1 $end
+$var wire 1 * not_sel_out $end
+$scope module not_gate_inst $end
+$var wire 1 ' A $end
+$var wire 1 * Y $end
+$upscope $end
+$scope module and_gate_d0_inst $end
+$var wire 1 * A $end
+$var wire 1 % B $end
+$var wire 1 ( Y $end
+$upscope $end
+$scope module and_gate_d1_inst $end
+$var wire 1 ' A $end
+$var wire 1 & B $end
+$var wire 1 ) Y $end
+$upscope $end
+$scope module or_gate_inst $end
+$var wire 1 ( A $end
+$var wire 1 ) B $end
+$var wire 1 ! Y $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0*
+0)
+0(
+1'
+0&
+0%
+1$
+0#
+0"
+0!
+$end
+#5000
+1*
+0$
+0'
+1#
+1&
+#10000
+1!
+0*
+1)
+1$
+1'
+#15000
+1(
+1!
+1*
+0)
+0$
+0'
+0#
+0&
+1"
+1%
+#20000
+0!
+0(
+0*
+1$
+1'
+#25000
+1!
+1(
+1*
+0$
+0'
+1#
+1&
+#30000
+0(
+0*
+1)
+1$
+1'

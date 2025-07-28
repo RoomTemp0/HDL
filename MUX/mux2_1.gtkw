@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Mon Jul 28 18:07:00 2025
+[*]
+[dumpfile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\mux2_1_tb.vcd"
+[dumpfile_mtime] "Mon Jul 28 18:04:40 2025"
+[dumpfile_size] 1177
+[savefile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\mux2_1.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-13.122116 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] mux2_1_tb.
+[treeopen] mux2_1_tb.uut.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+mux2_1_tb.D0
+mux2_1_tb.D1
+mux2_1_tb.Sel
+@29
+mux2_1_tb.Y
+[pattern_trace] 1
+[pattern_trace] 0
