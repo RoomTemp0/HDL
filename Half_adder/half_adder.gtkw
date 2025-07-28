@@ -1,0 +1,26 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Mon Jul 28 18:35:47 2025
+[*]
+[dumpfile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\half_adder_tb.vcd"
+[dumpfile_mtime] "Mon Jul 28 18:34:41 2025"
+[dumpfile_size] 735
+[savefile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\half_adder.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-12.122165 15000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] half_adder_tb.
+[treeopen] half_adder_tb.uut.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+half_adder_tb.A
+half_adder_tb.B
+half_adder_tb.Carry
+@29
+half_adder_tb.Sum
+[pattern_trace] 1
+[pattern_trace] 0

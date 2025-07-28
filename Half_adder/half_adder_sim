@@ -1,0 +1,63 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_00FA8C80 .scope module, "half_adder_tb" "half_adder_tb" 2 3;
+ .timescale -9 -12;
+v00FA5120_0 .var "A", 0 0;
+v00FA5178_0 .var "B", 0 0;
+v00FA51D0_0 .net "Carry", 0 0, L_00FA1530; 1 drivers
+v00FA9CF8_0 .net "Sum", 0 0, L_00FA9D50; 1 drivers
+S_00FA8A60 .scope module, "uut" "half_adder" 2 11, 3 1, S_00FA8C80;
+ .timescale 0 0;
+v00FA0C80_0 .net "A", 0 0, v00FA5120_0; 1 drivers
+v00FA0CD8_0 .net "B", 0 0, v00FA5178_0; 1 drivers
+v00FA0D30_0 .alias "Carry", 0 0, v00FA51D0_0;
+v00FA0D88_0 .alias "Sum", 0 0, v00FA9CF8_0;
+S_00FA8D08 .scope module, "xor_gate_inst" "xor_gate" 3 10, 4 1, S_00FA8A60;
+ .timescale 0 0;
+L_00FA9D50 .functor XOR 1, v00FA5120_0, v00FA5178_0, C4<0>, C4<0>;
+v00FA5B80_0 .alias "A", 0 0, v00FA0C80_0;
+v00FA5BD8_0 .alias "B", 0 0, v00FA0CD8_0;
+v00FA5C30_0 .alias "Y", 0 0, v00FA9CF8_0;
+S_00FA8F28 .scope module, "and_gate_inst" "and_gate" 3 17, 5 1, S_00FA8A60;
+ .timescale 0 0;
+L_00FA1530 .functor AND 1, v00FA5120_0, v00FA5178_0, C4<1>, C4<1>;
+v00FA1428_0 .alias "A", 0 0, v00FA0C80_0;
+v00FA1480_0 .alias "B", 0 0, v00FA0CD8_0;
+v00FA14D8_0 .alias "Y", 0 0, v00FA51D0_0;
+    .scope S_00FA8C80;
+T_0 ;
+    %vpi_call 2 22 "$dumpfile", "half_adder_tb.vcd";
+    %vpi_call 2 23 "$dumpvars", 1'sb0, S_00FA8C80;
+    %vpi_call 2 25 "$display", "Time | A | B | Sum | Carry";
+    %vpi_call 2 26 "$display", "---------------------------";
+    %set/v v00FA5120_0, 0, 1;
+    %set/v v00FA5178_0, 0, 1;
+    %delay 5000, 0;
+    %vpi_call 2 30 "$display", "%t | %b | %b | %b | %b", $time, v00FA5120_0, v00FA5178_0, v00FA9CF8_0, v00FA51D0_0;
+    %set/v v00FA5120_0, 0, 1;
+    %set/v v00FA5178_0, 1, 1;
+    %delay 5000, 0;
+    %vpi_call 2 33 "$display", "%t | %b | %b | %b | %b", $time, v00FA5120_0, v00FA5178_0, v00FA9CF8_0, v00FA51D0_0;
+    %set/v v00FA5120_0, 1, 1;
+    %set/v v00FA5178_0, 0, 1;
+    %delay 5000, 0;
+    %vpi_call 2 36 "$display", "%t | %b | %b | %b | %b", $time, v00FA5120_0, v00FA5178_0, v00FA9CF8_0, v00FA51D0_0;
+    %set/v v00FA5120_0, 1, 1;
+    %set/v v00FA5178_0, 1, 1;
+    %delay 5000, 0;
+    %vpi_call 2 39 "$display", "%t | %b | %b | %b | %b", $time, v00FA5120_0, v00FA5178_0, v00FA9CF8_0, v00FA51D0_0;
+    %vpi_call 2 41 "$stop";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 6;
+    "N/A";
+    "<interactive>";
+    "half_adder_tb.v";
+    "half_adder.v";
+    "xor_gate.v";
+    "and_gate.v";
