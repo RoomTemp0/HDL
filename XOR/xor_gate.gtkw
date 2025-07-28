@@ -1,0 +1,24 @@
+[*]
+[*] GTKWave Analyzer v3.3.48 (w)1999-2013 BSI
+[*] Mon Jul 28 17:00:55 2025
+[*]
+[dumpfile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\xor_gate_tb.vcd"
+[dumpfile_mtime] "Mon Jul 28 16:59:00 2025"
+[dumpfile_size] 439
+[savefile] "C:\Users\zacha\OneDrive\Desktop\engineer gameplay\VerilogHDL\xor_gate.gtkw"
+[timestart] 0
+[size] 1000 600
+[pos] -1 -1
+*-12.122165 5460 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] xor_gate_tb.
+[sst_width] 197
+[signals_width] 78
+[sst_expanded] 1
+[sst_vpaned_height] 153
+@28
+xor_gate_tb.uut.A
+xor_gate_tb.uut.B
+@29
+xor_gate_tb.uut.Y
+[pattern_trace] 1
+[pattern_trace] 0

@@ -1,0 +1,48 @@
+#! /c/iverilog/bin/vvp
+:ivl_version "0.9.7 " "(v0_9_7)";
+:vpi_time_precision - 12;
+:vpi_module "system";
+:vpi_module "v2005_math";
+:vpi_module "va_math";
+S_013220B0 .scope module, "xor_gate_tb" "xor_gate_tb" 2 3;
+ .timescale -9 -12;
+v01321260_0 .var "A", 0 0;
+v013292F8_0 .var "B", 0 0;
+v01329350_0 .net "Y", 0 0, L_013212B8; 1 drivers
+S_01322138 .scope module, "uut" "xor_gate" 2 11, 3 1, S_013220B0;
+ .timescale 0 0;
+L_013212B8 .functor XOR 1, v01321260_0, v013292F8_0, C4<0>, C4<0>;
+v01321158_0 .net "A", 0 0, v01321260_0; 1 drivers
+v013211B0_0 .net "B", 0 0, v013292F8_0; 1 drivers
+v01321208_0 .alias "Y", 0 0, v01329350_0;
+    .scope S_013220B0;
+T_0 ;
+    %vpi_call 2 19 "$dumpfile", "xor_gate_tb.vcd";
+    %vpi_call 2 20 "$dumpvars", 1'sb0, S_013220B0;
+    %vpi_call 2 22 "$display", "Time | A | B | Y";
+    %vpi_call 2 23 "$display", "------------------";
+    %set/v v01321260_0, 0, 1;
+    %set/v v013292F8_0, 0, 1;
+    %delay 5000, 0;
+    %vpi_call 2 27 "$display", "%t   | %b | %b | %b", $time, v01321260_0, v013292F8_0, v01329350_0;
+    %set/v v01321260_0, 0, 1;
+    %set/v v013292F8_0, 1, 1;
+    %delay 5000, 0;
+    %vpi_call 2 30 "$display", "%t   | %b | %b | %b", $time, v01321260_0, v013292F8_0, v01329350_0;
+    %set/v v01321260_0, 1, 1;
+    %set/v v013292F8_0, 0, 1;
+    %delay 5000, 0;
+    %vpi_call 2 33 "$display", "%t   | %b | %b | %b", $time, v01321260_0, v013292F8_0, v01329350_0;
+    %set/v v01321260_0, 1, 1;
+    %set/v v013292F8_0, 1, 1;
+    %delay 5000, 0;
+    %vpi_call 2 36 "$display", "%t   | %b | %b | %b", $time, v01321260_0, v013292F8_0, v01329350_0;
+    %vpi_call 2 38 "$stop";
+    %end;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "xor_gate_tb.v";
+    "xor_gate.v";
